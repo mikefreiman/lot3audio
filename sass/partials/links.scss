@@ -1,0 +1,10 @@
+.link-xl {
+  list-style: none;
+  padding: $spacer / 3 0;
+  > a {
+    font-size: $font-size-xl;
+    &:hover {
+      color: darken($primary, 15%);
+    }
+  }
+}

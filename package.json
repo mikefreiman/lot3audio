@@ -1,0 +1,20 @@
+{
+  "name": "ovidesign",
+  "version": "1.0.0",
+  "description": "A theme using oviCss for ovidesign.com",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx eleventy --watch && gulp"
+  },
+  "author": "ovidesign",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.24.1",
+    "gulp": "^3.9.1",
+    "gulp-cleancss": "^0.2.2",
+    "gulp-sass": "^4.0.1"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^0.6.0"
+  }
+}

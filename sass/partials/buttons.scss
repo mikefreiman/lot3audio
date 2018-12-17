@@ -1,0 +1,47 @@
+.btn {
+  display: block;
+  text-decoration: none;
+  white-space: nowrap;
+  vertical-align: middle;
+  touch-action: manipulation;
+  text-align: center;
+  border-radius: 0;
+  font-size: 16px;
+  padding: 12px 16px;
+  margin: 12px 12px 0 0;
+  min-width: 164px;
+  background-color: transparent;
+  cursor: pointer;
+  // User-Agent Style Overrides
+  border-style: none;
+  border-width: 0px;
+  border-color: transparent;
+  border-image: none;
+  @include sm {
+    display: inline-block;
+    margin: 8px 8px 0 0;
+  }
+  &:focus {
+    outline: -webkit-focus-ring-color auto 0px;
+    outline: none;
+  }
+}
+.btn--primary{
+  border-color: $primary;
+  background-color: $primary;
+  color: $white;
+}
+ .btn--white {
+   border-color: $white;
+   color: $white;
+ }
+.btn--a {
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 8px;
+}
+.btn--card {
+  text-align: left;
+  max-width: 200px;
+  font-weight: 600;
+}

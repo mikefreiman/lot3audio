@@ -1,0 +1,11 @@
+// Subnav
+.sub-menu {
+  padding: $spacer;
+  background-color: #fefefe;
+  border: 1px solid $lines;
+}
+
+.sub-menu li {
+  list-style: none;
+  padding: $spacer / 1;
+}

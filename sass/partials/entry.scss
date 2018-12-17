@@ -1,0 +1,66 @@
+.entry-content {
+  p {
+    margin: $spacer 0;
+  }
+  blockquote {
+    display: block;
+    text-align: center;
+    clear: both;
+    border-top: 1px solid $lines;
+    border-bottom: 1px solid $lines;
+    padding: $spacer * 2 0;
+    margin: $spacer * 2 0;
+    p {
+      font-size: $h3-font-size;
+    }
+  }
+  figure {
+    &.alignleft {
+      float: none;
+    }
+    display: flex;
+    flex-direction: column;
+    width: 100% !important;
+    clear: both;
+    padding: $spacer 0;
+    border-top: 1px solid $lines;
+    border-bottom: 1px solid $lines;
+    &.aligncenter {
+      border-top: none;
+      border-bottom: none;
+      display: block;
+      width: 98%;
+      margin: 0 auto;
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+    }
+    img {
+      flex: 1 auto;
+      margin: 0 auto;
+    }
+    figcaption {
+      width: 100%;
+      flex: 1 auto;
+      padding: $spacer 0;
+      align-self: center;
+      font-size: $font-size-base;
+      text-align: center;
+    }
+  }
+}
+
+.alignleft,
+.alignright,
+.aligncenter {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.lead-xl {
+  font-size: $font-size-xl;
+}

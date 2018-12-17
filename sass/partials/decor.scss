@@ -1,0 +1,28 @@
+.line {
+  border-bottom: 1px solid $lines;
+}
+
+.divider-dk,
+.divider {
+  border-right: none;
+}
+
+.pad-right {
+  padding-right: 0;
+}
+
+.pad-left {
+  padding-left: 0;
+}
+
+.pad-bottom {
+  padding-bottom: $spacer;
+}
+
+.pad-top {
+  padding-top: $spacer;
+}
+
+.accent {
+  color: $accent;
+}

@@ -1,0 +1,31 @@
+// Media Queries Mixin
+@mixin sm {
+  @media (min-width: #{$screen-sm-min}) {
+    @content;
+  }
+}
+@mixin md {
+  @media (min-width: #{$screen-md-min}) {
+    @content;
+  }
+}
+@mixin lg {
+  @media (min-width: #{$screen-lg-min}) {
+    @content;
+  }
+}
+
+@mixin fine {
+  @media (pointer: #{$pointer}) {
+    @content;
+  }
+}
+
+// Image URL - WordPress Only
+@mixin img-path($image) {
+  background-image: url('/wp-content/themes/mhns/img/#{$image}');
+}
+
+@mixin icon-path($icon) {
+  background-image: url('/wp-content/themes/mhns/icons/#{$icon}');
+}

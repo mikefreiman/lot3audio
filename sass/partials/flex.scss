@@ -1,0 +1,68 @@
+.flex-eq {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row nowrap;
+  flex: 1 1 auto;
+  align-items: stretch;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.center {
+  align-items: center;
+  justify-content: center;
+}
+
+.justify {
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.row-2x {
+  flex-grow: 2;
+}
+
+.flex-row,
+.flex-col  {
+  display: flex;
+  flex: 1 1 auto;
+}
+
+.flex-row {
+  flex-direction: column;
+}
+
+.flex-col {
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+}
+
+.row-25,
+.row-33,
+.row-50,
+.row-66,
+.row-100 {
+  width: 100%;
+}
+
+.row-50--nopad {
+  width: 100%;
+}
+
+.flex-img,
+.grid-img {
+  min-height: 220px;
+  height: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.grid-img {
+  border: 2px solid #fff;
+}

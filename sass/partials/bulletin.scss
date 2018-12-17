@@ -1,0 +1,9 @@
+.bulletin {
+  background-color: lighten($yellow, 20%);
+  font-weight: 500;
+}
+
+.lead-bulletin {
+  font-size: $h3-font-size;
+  font-weight: $font-weight-bold;
+}
