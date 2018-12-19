@@ -10,10 +10,11 @@
 .nav-bar {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   width: 100%;
   z-index: 150;
   overflow: hidden;
-  background-color: $white;
+  background-color: $black;
   position: relative;
 }
 
@@ -87,12 +88,16 @@
     margin: $spacer * 1.5 0;
     font-size: 1rem;
     text-transform: capitalize;
-    color: $black;
+    color: $white;
   }
 }
 
 .nav-logo {
-  display: none;
+  color: #fff;
+  font-size: 42px;
+  font-weight: 500;
+  text-transform: uppercase;
+  align-self: center;
 }
 
 .nav-logo--mobile {

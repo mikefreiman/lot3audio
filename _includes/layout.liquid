@@ -10,17 +10,18 @@
     </style>
 </head>
 <body>
-    {% include header %}
-    <main>
-        <article>
-            <section class="section line">
-                <div class="box">
-                    {{ content }}
-                </div>
-            </section>
-        </article>
-    </main>
-    {% include footer %}
-    {% include styles %}
+  {% include nav %}
+  {% include header %}
+  <main>
+      <article>
+          <section class="section line">
+              <div class="box">
+                  {{ content }}
+              </div>
+          </section>
+      </article>
+  </main>
+  {% include footer %}
+  {% include styles %}
 </body>
 </html>
