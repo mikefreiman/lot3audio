@@ -10,11 +10,9 @@
 .nav-bar {
   display: flex;
   flex-direction: row;
-  justify-content: center;
   width: 100%;
   z-index: 150;
   overflow: hidden;
-  background-color: $black;
   position: relative;
 }
 
@@ -63,7 +61,6 @@
   // -webkit-transform: translateX(-103%);
   transform: translateX(-103%);
   pointer-events: auto;
-  background-color: $white;
   will-change: transform;
   padding-top: 54px;
   overflow-y: scroll;
@@ -93,7 +90,7 @@
 }
 
 .nav-logo {
-  color: #fff;
+  color: $footer-bg;
   font-size: 42px;
   font-weight: 500;
   text-transform: uppercase;
