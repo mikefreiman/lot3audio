@@ -1,9 +1,16 @@
 .hero {
+  position: relative;
   height: 100%;
   min-height: 350px;
   max-height: 360px;
   background-repeat: repeat, no-repeat;
   background-size: 225px 225px, auto;
   background-position: center, center;
-  background-color: #add3fb;
+}
+
+.svg-tri {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 10vw;
 }
