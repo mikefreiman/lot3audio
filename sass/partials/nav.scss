@@ -93,14 +93,10 @@
 }
 
 .nav-logo {
-position: absolute;
-top: 27px;
-left: 0;
-z-index: 300;
-width: 100px;
+align-self: center;
+margin-left: 6px;
+width: 54px;
 height: auto;
-border: 12px solid #fff;
-border-radius: 50%;
 }
 
 .nav-logo--mobile {
