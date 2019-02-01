@@ -1,5 +1,8 @@
 <nav class="nav">
   <div class="nav-bar">
+    <a href="{{site.url}}" class="nav-logo">
+      {% include logo %}
+    </a>
     <div class="nav-icon" aria-controls="primary-menu" aria-label="Open the navigation drawer." role="button" aria-disabled="false" tabindex="0">
       <svg class="icon icon-nav" viewBox="0 0 24 18.000001">
         <g
@@ -20,11 +23,32 @@
         </g>
       </svg>
     </div>
-    <a href="https://artother.com" class="nav-logo">
-      Art Other
-    </a>
-  </div>
   <div class="nav-menu">
-    <div class="nav-close"></div>
+    <div class="nav-close">
+      <svg viewBox="0 0 16 16.000001">
+        <g
+           transform="matrix(0.83805254,0,0,0.83805254,-2.0566306,0.45752735)"
+           id="g4278">
+          <path
+             id="rect4136-3"
+             d="M 4.5753784,-0.54594108 21.545941,16.424623 19.424621,18.545943 2.4540582,1.5753792 Z"
+             style="fill:#6c757d;fill-opacity:1;stroke:none;stroke-width:1.5;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+          <path
+             id="rect4136-6"
+             d="M 2.4540581,16.424623 19.424621,-0.54594113 21.545941,1.5753793 4.5753783,18.545943 Z"
+             style="fill:#6c757d;fill-opacity:1;stroke:none;stroke-width:1.5;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        </g>
+      </svg>
+    </div>
+    <ul class="nav-ul">
+      {%- for post in collections.post -%}
+        <li class="nav-li{% if page.url == post.url %} active{% endif %}">
+          <a href="{{ post.url }}">
+            {{ post.data.aTxt }}
+          </a>
+        </li>
+      {%- endfor -%}
+    </ul>
   </div>
+</div>
 </nav>
