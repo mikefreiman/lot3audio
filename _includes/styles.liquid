@@ -1,2 +1,7 @@
-<link rel="stylesheet" href="./css/belowFold.css">
-<link rel="stylesheet" media="(min-width: 899px)" href="./css/900px.css">
+{% if rest %}
+<link rel="stylesheet" href="../css/belowFold.css">
+<link rel="stylesheet" media="(min-width: 899px)" href="../css/900px.css">
+{% else %}
+<link rel="stylesheet" href="css/belowFold.css">
+<link rel="stylesheet" media="(min-width: 899px)" href="css/900px.css">
+{% endif %}
