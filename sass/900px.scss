@@ -49,7 +49,8 @@
 
 .hero {
   min-height: 700px;
-  max-height: 720px;
+  background-size: 350px auto;
+  background-position: 84% bottom;
 }
 
 // Decor
@@ -107,14 +108,19 @@
 //
 //  Computers and Laptops  with Fine Pointers Only
 //
-@include fine {
   // Nav
   .nav {
+    height: 100px;
     padding: 0 $spacer * 3 0 $spacer;
   }
 
   .nav-bar {
     z-index: 180;
+  }
+
+  .nav-logo {
+    width: 250px;
+    height: auto;
   }
 
   .nav-close {
@@ -147,4 +153,4 @@
     display: none;
   }
 
-}
+
