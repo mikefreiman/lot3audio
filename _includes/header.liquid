@@ -1,11 +1,8 @@
 <header class="hero" style="background-image: url(./img/{{ hero }})">
-<svg class="svg-lights" viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-  <circle cx="80" cy="15" r="5" fill="#fff" fill-opacity="0.2" />
-  <circle cx="77" cy="18" r="5" fill="#fff" fill-opacity="0.4" />
-  <circle cx="45" cy="45" r="10" fill="#fff" fill-opacity="0.35" />
-  <circle cx="70" cy="82" r="15" fill="#fff" fill-opacity="0.05" />
-</svg>
-<svg class="svg-circle" viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-  <circle cx="-10" cy="50" r="100" fill="#fff" fill-opacity="0.06" />
-</svg>
+  <div class="box">
+    <h1 class="hero-h1">
+      {{ h1 }}
+    </h1>  
+  </div>
+  {% include lights %}
 </header>

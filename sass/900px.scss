@@ -48,9 +48,12 @@
 // Header
 
 .hero {
-  min-height: 700px;
   background-size: 250px auto;
   background-position: 84% bottom;
+}
+
+.hero-h1 {
+  font-size: 5em;
 }
 
 .svg-lights {
@@ -160,5 +163,3 @@
   .nav-icon {
     display: none;
   }
-
-
