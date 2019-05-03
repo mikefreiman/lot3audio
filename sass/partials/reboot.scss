@@ -484,3 +484,8 @@ template {
 [hidden] {
   display: none !important;
 }
+
+p {
+  margin-block-end: 0;
+  margin-block-start: 0;
+}

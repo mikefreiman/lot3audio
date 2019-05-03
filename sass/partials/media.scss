@@ -1,7 +1,12 @@
 .img-responsive {
-  align-self: center;
-  display: flex;
+  display: block;
   width: 100%;
   height: auto;
   margin: 0 auto;
+}
+
+.img-row {
+  display: block;
+  width: 100%;
+  height: auto;
 }

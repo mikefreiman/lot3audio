@@ -1,21 +1,51 @@
 {% if rest %}
-<header class="hero" style="background-image: url(../img/{{ hero }})">
-  <div class="box">
+<header class="hero-front flex">
+  <div class="row-50">
+    <img class="img-row" src="../img/poet.jpg" alt="The Poet">
+  </div>
+  <a href="#" class="row-50">
+    <img class="img-row" src="../img/microphone.jpg" alt="microphone.jpg">
+  </a>
+</header>
+<div class="hero-banner flex-row">
+  <div class="row-66 flex flex-col">
     <h1 class="hero-h1">
       {{ h1 }}
     </h1>
-    <p class="hero-p lead">{{ caption }}</p>
+    <p class="hero-p lead">
+      <span>
+        {{ biz }}
+      </span>
+      {{ caption }}
+    </p>
   </div>
-  {% include lights %}
-</header>
+  <div class="row-33 flex hero-pdx">
+    <p class="hero-loc">Portland, OR</p>
+  </div>
+</div>
 {% else %}
-<header class="hero" style="background-image: url(./img/{{ hero }})">
-  <div class="box">
+<header class="hero-front flex">
+  <div class="row-50">
+    <img class="img-row" src="img/poet.jpg" alt="The Poet">
+  </div>
+  <a href="#" class="row-50">
+    <img class="img-row" src="img/microphone.jpg" alt="microphone.jpg">
+  </a>
+</header>
+<div class="hero-banner flex-row">
+  <div class="row-66 flex flex-col">
     <h1 class="hero-h1">
       {{ h1 }}
     </h1>
-    <p class="hero-p lead">{{ caption }}</p>
+    <p class="hero-p lead">
+      <span>
+        {{ biz }}
+      </span>
+      {{ caption }}
+    </p>
   </div>
-  {% include lights %}
-</header>
+  <div class="row-33 flex hero-pdx">
+    <p class="hero-loc">Portland, OR</p>
+  </div>
+</div>
 {% endif %}

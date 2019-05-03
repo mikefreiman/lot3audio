@@ -21,7 +21,6 @@
 .row-25,
 .row-50 {
   width: 50%;
-  padding: 0 $spacer * 2 0;
 }
 
 .row-50--nopad {
@@ -46,27 +45,23 @@
   min-height: 450px;
 }
 // Header
-
-.hero {
-  background-size: 250px auto;
-  background-position: 84% bottom;
-}
-
 .hero-h1 {
-  font-size: 5em;
+  font-size: 3em;
+  word-spacing: normal;
+  padding: $spacer * 2 $spacer;
 }
 
 .hero-p {
-  font-size: 2em;
+  padding: $spacer * 2 $spacer;
+  font-size: 1.5em;
 }
 
-.svg-lights {
-    width: 350px;
-    height: 350px;
+.hero-front {
+  padding: $spacer * 2 $spacer;
 }
 
-.svg-circle {
-  transform: none;
+.hero-pdx {
+  justify-content: center;
 }
 // Decor
 
@@ -89,35 +84,6 @@
 .pad {
   padding-bottom: $spacer * 1.5;
   padding-top: $spacer * 1.5;
-}
-
-// Entry
-
-.entry-content {
-  figure {
-    flex-direction: row;
-    width: 100% !important;
-    padding: $spacer * 3 0;
-    img {
-      margin: 0 $spacer;
-    }
-    figcaption {
-      padding: $spacer 0;
-      font-size: $font-size-xl;
-    }
-  }
-}
-
-.alignleft {
-  float: left;
-  width: 50%;
-  margin: 0 $spacer $spacer 0;
-}
-
-.alignright {
-  float: right;
-  width: 50%;
-  margin: 0 0 $spacer $spacer;
 }
 
 //

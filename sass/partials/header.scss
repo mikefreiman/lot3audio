@@ -1,28 +1,60 @@
 .hero {
-  position: relative;
-  height: 100%;
-  padding: 110px 0;
-  background-color: #00265d;
-  background-repeat: no-repeat;
-  background-size: 110px auto;
-  background-position: 94% bottom;
+  width: 100%;
+  padding: $spacer;
+  background-color: $gun-dk;
 }
 
 .hero-h1 {
-  display: block;
-  color: #fff;
-  font-size: 2em;
+  padding: $spacer * 2 $spacer * .5;
+  color: $white;
+  font-size: 3em;
+  word-spacing: 5000px;
   @media (min-width: 765px) {
-    font-size: 4em;
+    font-size: 5em;
   }
   text-transform: uppercase;
   font-weight: 500;
-  word-spacing: 5000px;
+  overflow: hidden;
 }
 
 .hero-p {
-  color: #fff;
+  padding: $spacer * 2 $spacer * .5;
+  background-color: $gun-lt;
+  color: $pretty;
   font-size: 1em;
   text-transform: uppercase;
   font-weight: 500;
+  span {
+    display: block;
+    font-size: 2em;
+    font-weight: 700;
+    color: $accent;
+  }
+}
+
+.hero-pdx {
+  justify-content: flex-start;
+  align-items: center;
+  padding: $spacer * 2 $spacer * .5;
+  background-color: darken($accent, 20%);
+}
+
+.hero-loc {
+  font-size: 2.5em;
+  font-weight: 700;
+  text-transform: uppercase;
+  word-break: break-all;
+  color: $white;
+}
+
+.hero-front {
+  flex-flow: row wrap;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: $spacer * 2 $spacer * .5;
+  background-color: $gun-dk;
+}
+
+.hero-banner {
+  background-color: $gun;
 }

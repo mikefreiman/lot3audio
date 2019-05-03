@@ -56,3 +56,15 @@ h6, .h6 { font-size: $h6-font-size; }
   font-size: $font-size-lg;
   text-align: center;
 }
+
+.h3-accent {
+  color: $accent;
+}
+
+.h4-accent {
+  color: $pretty;
+}
+
+.p-white {
+  color: $white;
+}

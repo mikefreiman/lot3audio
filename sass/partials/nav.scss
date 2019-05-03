@@ -4,7 +4,7 @@
   flex-flow: row nowrap;
   position: relative;
   height: 80px;
-  background-color: $white;
+  background-color: $gun;
 }
 
 .nav-bar {
@@ -62,7 +62,7 @@
   will-change: transform;
   padding-top: 54px;
   overflow-y: scroll;
-  background-color: $white;
+  background-color: $gun;
 }
 
 .nav-ul {
@@ -83,11 +83,12 @@
     margin: $spacer * 1.5 0;
     font-size: 1rem;
     text-transform: capitalize;
-    color: $black;
+    color: $white;
   }
-  &.active {
+  &.active,
+  &:hover {
     a {
-      color: $primary;
+      color: $pretty;
     }
   }
 }
